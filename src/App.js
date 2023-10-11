@@ -9,6 +9,9 @@ import UserList from "./components/pages/userList/UserList";
 import User from "./components/pages/user/User";
 import NewUser from "./components/pages/newUser/NewUser";
 import Analytics from './components/pages/analytics/Analytics';
+import Settings from './components/pages/settings/Settings';
+import Transaction from './components/pages/transaction/Transaction';
+import Profile from './components/pages/profile/Profile';
 
 
 function App() {
@@ -24,7 +27,14 @@ function App() {
         <Route path="/users" element={<UserList />} />
         <Route path="user/:userId" element={<User/>} />
         <Route path="/newUser" element={<NewUser/>} />
+
+        <Route path="/transaction" element={<Transaction/>}/>
+
+        <Route path="/profile" element={<Profile/>}/>
+
+        <Route path='/settings' element={<Settings/>}/>
       </Routes>
+      
     </div>
     </Router>
      
