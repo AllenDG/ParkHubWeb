@@ -6,10 +6,6 @@ export default function Notification() {
     <div className="sidebarMenu">
     <h3 className="sidebarTitle">Notification</h3>
     <ul className="sidebarList">
-      <li className="sidebarListItem">
-        <MailOutline className="sidebarIcon"/>
-        Mail
-      </li>
 
       <li className="sidebarListItem">
         <DynamicFeed className="sidebarIcon"/>
