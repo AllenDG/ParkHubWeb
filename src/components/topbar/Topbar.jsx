@@ -1,13 +1,20 @@
 import React from "react";
 import "./topbar.css";
-import { NotificationsNone, Language, Settings } from "@mui/icons-material";
-import { Link } from "react-router-dom"; // Import the Link component
+
 
 // Import your images here
 import logo from "../../assets/images/Logo.png";
-import profile from "../../assets/images/profile.jpg";
+
 
 export default function Topbar() {
+  const handleLogout = () => {
+    // Implement the logout logic here, such as clearing user session, etc.
+    // For example, if you're using a state management system like Redux, you'd dispatch a logout action.
+    // After handling the logout, you can redirect the user to the login page.
+    // Replace the following line with your actual logout logic and redirection.
+    // Example: history.push('/login');
+  };
+
   return (
     <div className="topbar">
       <div className="topbarWrapper">
@@ -18,18 +25,11 @@ export default function Topbar() {
         </div>
 
         <div className="topRight">
-      
           <div className="topbarIconContainer">
-            <Link to="/settings"> {/* Use the Link component to navigate to the settings page */}
-              <Settings />
-            </Link>
+          
+            <button  onClick={handleLogout} className="logoutButton">Logout</button>
           </div>
-          
-          
-          <Link to="/profile"> {/* Link to the profile page */}
-            <img src={profile} alt="Profile image" className="topAvatar" />
-          </Link>
-          
+
         </div>
       </div>
     </div>
