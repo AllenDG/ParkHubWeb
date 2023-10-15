@@ -18,15 +18,7 @@ export default function Topbar() {
         </div>
 
         <div className="topRight">
-          <div className="topbarIconContainer">
-            <NotificationsNone />
-            <span className="topIconBadge">69</span>
-          </div>
-
-          <div className="topbarIconContainer">
-            <Language />
-          </div>
-
+      
           <div className="topbarIconContainer">
             <Link to="/settings"> {/* Use the Link component to navigate to the settings page */}
               <Settings />

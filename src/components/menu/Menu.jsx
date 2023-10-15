@@ -13,12 +13,7 @@ export default function Menu() {
             User
           </li>
         </Link>
-        <Link to="/transaction" className="link">
-          <li className="sidebarListItem">
-            <AttachMoney className="sidebarIcon"/>
-            Transaction
-          </li>
-        </Link>
+        
        
       </ul>
     </div>
